@@ -16,6 +16,9 @@ module.exports = {
 			twitter: 'kylemathews',
 		},
 	},
+	flags: {
+		PRESERVE_WEBPACK_CACHE: true,
+	},
 	plugins: [
 		{
 			resolve: 'gatsby-source-filesystem',
