@@ -6,18 +6,16 @@ module.exports = {
 				name: 'Thammarith Likittheerameth',
 				summary: 'the one who codes this',
 				social: {
-					twitter: 'kylemathews',
+					twitter: 'thammarith',
 				},
 			},
 		],
+		image: '/default-thumbnail.png',
 		description: 'The Definitive Astronomical Website for Thais',
 		siteUrl: 'https://thaiastro.nectec.or.th',
 		social: {
-			twitter: 'kylemathews',
+			twitter: 'theThaiAstro',
 		},
-	},
-	flags: {
-		PRESERVE_WEBPACK_CACHE: true,
 	},
 	plugins: [
 		{
@@ -30,7 +28,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/content/assets`,
+				path: `${__dirname}/src/assets`,
 				name: 'assets',
 			},
 		},
@@ -41,7 +39,8 @@ module.exports = {
 					{
 						resolve: 'gatsby-remark-images',
 						options: {
-							maxWidth: 630,
+							maxWidth: 704,
+							wrapperStyle: 'max-width: 88rem',
 						},
 					},
 					{
@@ -68,16 +67,17 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'Gatsby Starter Blog',
-				short_name: 'GatsbyJS',
+				name: 'The Thai Astronomical Society',
+				short_name: 'TAS',
 				start_url: '/',
 				background_color: '#ffffff',
 				theme_color: '#663399',
 				display: 'minimal-ui',
-				icon: 'content/assets/gatsby-icon.png',
+				icon: 'src/assets/images/logo.png',
 			},
 		},
 		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-sass',
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// 'gatsby-plugin-offline',
