@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'FC Minimal';
+	src: local('FC Minimal Regular'), local('FCMinimalRegular'),
+		url('../assets/fonts/fc-minimal/FCMinimalRegular.woff2') format('woff2'),
+		url('../assets/fonts/fc-minimal/FCMinimalRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FC Minimal';
+	src: local('FC Minimal Italic'), local('FCMinimalItalic'),
+		url('../assets/fonts/fc-minimal/FCMinimalItalic.woff2') format('woff2'),
+		url('../assets/fonts/fc-minimal/FCMinimalItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'FC Minimal';
+	src: local('FC Minimal Bold'), local('FCMinimalBold'),
+		url('../assets/fonts/fc-minimal/FCMinimalBold.woff2') format('woff2'),
+		url('../assets/fonts/fc-minimal/FCMinimalBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FC Minimal';
+	src: local('FC Minimal Bold Italic'), local('FCMinimalBoldItalic'),
+		url('../assets/fonts/fc-minimal/FCMinimalBoldItalic.woff2')
+			format('woff2'),
+		url('../assets/fonts/fc-minimal/FCMinimalBoldItalic.woff')
+			format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TH-Chara';
+	src: local('TH-Chara'),
+		url('../assets/fonts/th-chara/TH-Chara.woff2') format('woff2'),
+		url('../assets/fonts/th-chara/TH-Chara.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
