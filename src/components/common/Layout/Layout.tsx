@@ -7,13 +7,11 @@ interface LayoutProps {
 	children?: JSX.Element[];
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) =>  (
+const Layout: React.FC<LayoutProps> = ({ children }) => (
 	<div className={styles.layoutWrapper}>
 		{/* <Header /> */}
 
-		<main>
-			{children}
-		</main>
+		<main>{children}</main>
 
 		<footer>
 			© {new Date().getFullYear()}, Built with

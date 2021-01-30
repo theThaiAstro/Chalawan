@@ -1,14 +1,15 @@
 :root {
-  font-size: 8px;
+	font-size: 8px;
 }
 
 *,
 :after,
 :before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    overflow-y: scroll;
+	margin: 0;
+	overflow-y: scroll;
+	font-family: 'TH-Chara';
 }

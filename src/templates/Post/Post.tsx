@@ -1,40 +1,43 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../../components/common/Bio/Bio';
+import Bio from '../../components/Bio/Bio';
 import Layout from '../../components/common/Layout/Layout';
 import SEO from '../../components/common/SEO/SEO';
+import PostHeader from '../../components/PostHeader/PostHeader';
+import Post from '../../types/post';
+
+import styles from './Post.module.scss';
 
 const BlogPostTemplate = ({ data, location }) => {
-	const post = data.markdownRemark;
-	const siteTitle = data.site.siteMetadata?.title || `Title`;
+	const post: { frontmatter: Post } = data.markdownRemark;
 	const { previous, next } = data;
 
 	return (
-		<Layout location={location} title={siteTitle}>
+		<Layout>
 			<SEO
 				title={post.frontmatter.title}
 				description={post.frontmatter.description || post.excerpt}
 			/>
 			<article
-				className="blog-post"
+				className={styles.post}
 				itemScope
 				itemType="http://schema.org/Article"
 			>
-				<header>
-					<h1 itemProp="headline">{post.frontmatter.title}</h1>
-					<p>{post.frontmatter.date}</p>
-				</header>
+				<PostHeader
+					date={post.frontmatter.date}
+					title={post.frontmatter.title}
+				/>
+
 				<section
 					dangerouslySetInnerHTML={{ __html: post.html }}
 					itemProp="articleBody"
 				/>
-				<hr />
-				<footer>
+				{/* <footer>
 					<Bio />
-				</footer>
+				</footer> */}
 			</article>
-			<nav className="blog-post-nav">
+			{/* <nav className="blog-post-nav">
 				<ul
 					style={{
 						display: `flex`,
@@ -59,7 +62,7 @@ const BlogPostTemplate = ({ data, location }) => {
 						)}
 					</li>
 				</ul>
-			</nav>
+			</nav> */}
 		</Layout>
 	);
 };
