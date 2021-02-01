@@ -9,7 +9,14 @@
 }
 
 body {
+  font-family: 'TH-Chara';
 	margin: 0;
 	overflow-y: scroll;
-	font-family: 'TH-Chara';
+}
+
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-family: 'FC Minimal';
+	}
 }
