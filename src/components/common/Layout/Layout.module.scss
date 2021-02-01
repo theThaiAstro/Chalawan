@@ -1,0 +1,7 @@
+.layoutWrapper {
+    & > * {
+        margin: 0 auto;
+        max-width: 88rem;
+        width: 100%;
+    }
+}
