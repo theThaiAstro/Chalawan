@@ -33,6 +33,7 @@ const BlogPostTemplate = ({ data, location }) => {
 					dangerouslySetInnerHTML={{ __html: post.html }}
 					itemProp="articleBody"
 				/>
+
 				{/* <footer>
 					<Bio />
 				</footer> */}
