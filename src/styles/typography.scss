@@ -37,10 +37,37 @@
 }
 
 @font-face {
-	font-family: 'TH-Chara';
-	src: local('TH-Chara'),
-		url('../assets/fonts/th-chara/TH-Chara.woff2') format('woff2'),
-		url('../assets/fonts/th-chara/TH-Chara.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
+    font-family: 'CmPrasanmit';
+    src: local('CmPrasanmit Bold Italic'), local('CmPrasanmit-BoldItalic'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CmPrasanmit';
+    src: local('CmPrasanmit Italic'), local('CmPrasanmit-Italic'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit-Italic.woff2') format('woff2'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CmPrasanmit';
+    src: local('CmPrasanmit'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit.woff2') format('woff2'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CmPrasanmit';
+    src: local('CmPrasanmit Bold'), local('CmPrasanmit-Bold'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit-Bold.woff2') format('woff2'),
+        url('../assets/fonts/cm-prasanmit/CmPrasanmit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }

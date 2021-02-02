@@ -13,11 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
 
 		<main>{children}</main>
 
-		<footer>
-			© {new Date().getFullYear()}, Built with
-			{` `}
-			<a href="https://www.gatsbyjs.com">Gatsby</a>
-		</footer>
+		<footer style={{ height: '8rem'}}></footer>
 	</div>
 );
 
