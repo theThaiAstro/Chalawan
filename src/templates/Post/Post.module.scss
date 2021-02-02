@@ -1,3 +1,16 @@
 .post {
-    font-size: 2rem;
+}
+
+.postContent {
+	font-family: 'CmPrasanmit';
+	font-size: 3.5rem;
+	line-height: 1.16;
+
+	p:first-of-type {
+		margin: 6rem 0 0;
+	}
+
+	p {
+		margin: 3rem 0 0;		
+	}
 }
