@@ -1,0 +1,19 @@
+.featuredBlock {
+	align-items: flex-end;
+	background: linear-gradient(0deg, #183890a3, #fff0  ), url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Heavens_Above_Her.jpg/2048px-Heavens_Above_Her.jpg');
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 88vh;
+	padding: 0 16rem;
+	width:100%;
+}
+
+.title {
+	color: #fff;
+	font-family: 'FC Minimal';
+	font-size: 12rem;
+	margin: 0 0 8rem;
+}
